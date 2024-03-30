@@ -15,8 +15,8 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
         body: ListView(children: [
       Container(
-          padding: EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 10),
-          decoration: BoxDecoration(
+          padding: const EdgeInsets.only(top: 15, left: 15, right: 15, bottom: 10),
+          decoration: const BoxDecoration(
             color: Color.fromARGB(255, 3, 136, 76),
             borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(20),
@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+              const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                 Icon(
                   Icons.dashboard,
                   size: 30,
@@ -36,8 +36,8 @@ class HomeScreen extends StatelessWidget {
                   color: Colors.white,
                 ),
               ]),
-              SizedBox(height: 20),
-              Padding(
+              const SizedBox(height: 20),
+              const Padding(
                 padding: EdgeInsets.only(left: 0, bottom: 15),
                 child: Align(
                     alignment: Alignment.centerLeft,
@@ -52,7 +52,7 @@ class HomeScreen extends StatelessWidget {
                             wordSpacing: 2))),
               ),
               Container(
-                  margin: EdgeInsets.only(left: 5, bottom: 5),
+                  margin: const EdgeInsets.only(left: 5, bottom: 5),
                   width: MediaQuery.of(context).size.width,
                   height: 55,
                   alignment: Alignment.center,
@@ -67,21 +67,21 @@ class HomeScreen extends StatelessWidget {
                       hintStyle: TextStyle(
                         color: Colors.black.withOpacity(0.5),
                       ),
-                      prefixIcon: Icon(Icons.search, size: 25),
+                      prefixIcon: const Icon(Icons.search, size: 25),
                     ),
                   )),
               Padding(
-                  padding: EdgeInsets.only(top: 20, left: 15, right: 15),
+                  padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
                   child: Column(
                     children: [
                       GridView.builder(
                           shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
+                          physics: const NeverScrollableScrollPhysics(),
                           gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 3, childAspectRatio: 1.1),
                               itemBuilder: (context, index) {
-                                return Column();
+                                return const Column();
                               },
                                   ),
                           
